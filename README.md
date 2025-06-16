@@ -15,8 +15,6 @@
 
 ### **1. Quantumult X**
 
-**[一键导入 Quantumult X](quantumult-x:///add-resource?remote-resource=%7B%22rewrite_remote%22%3A%5B%22https%3A%2F%2Fraw.githubusercontent.com%2FQuellaMC%2FNeteaseUnlocker%2Fmain%2FNeteaseUnlocker.snippet%22%5D%7D)**
-
 **手动配置:**
 
 1.  **添加重写规则**: 在 `重写 > 引用` 添加以下链接。
@@ -25,8 +23,6 @@
     ```
 
 ### **2. Loon**
-
-**[一键导入 Loon](loon://import?plugin=https%3A%2F%2Fraw.githubusercontent.com%2FQuellaMC%2FNeteaseUnlocker%2Fmain%2FNeteaseUnlocker.plugin)**
 
 **手动配置:**
 
@@ -38,8 +34,6 @@
 
 ### **3. Surge**
 
-**[一键导入 Surge](surge:///install-module?url=https%3A%2F%2Fraw.githubusercontent.com%2FQuellaMC%2FNeteaseUnlocker%2Fmain%2FNeteaseUnlocker.sgmodule)**
-
 **手动配置:**
 
 1.  **添加模块**: 在 `首页 > 修改 > 模块 > 安装新模块` 添加以下链接。
@@ -48,8 +42,6 @@
     ```
 
 ### **4. Stash (Clash Premium Core)**
-
-**[一键导入 Stash](stash://install-override?url=https%3A%2F%2Fraw.githubusercontent.com%2FQuellaMC%2FNeteaseUnlocker%2Fmain%2FNeteaseUnlocker.stoverride)**
 
 **手动配置:**
 
