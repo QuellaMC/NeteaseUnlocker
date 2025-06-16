@@ -15,7 +15,10 @@
 
 ### **1. Quantumult X**
 
-[![一键导入 Quantumult X](https://img.shields.io/badge/一键导入-Quantumult_X-blue.svg)](quantumult-x:///add-resource?remote-resource=%7B%22rewrite_remote%22%3A%5B%22https%3A%2F%2Fraw.githubusercontent.com%2FQuellaMC%2FNeteaseUnlocker%2Fmain%2FNeteaseUnlocker.snippet%22%5D%7D)
+[![一键导入 Quantumult X][quantumult-x-sheid]][quantumult-x]
+
+[quantumult-x-sheid]: https://img.shields.io/badge/一键导入-Quantumult_X-blue.svg?style=for-the-badge&labelColor=gray
+[quantumult-x]: quantumult-x:///add-resource?remote-resource=%7B%22rewrite_remote%22%3A%5B%22https%3A%2F%2Fraw.githubusercontent.com%2FQuellaMC%2FNeteaseUnlocker%2Fmain%2FNeteaseUnlocker.snippet%22%5D%7D
 
 **手动配置:**
 
@@ -26,7 +29,10 @@
 
 ### **2. Loon**
 
-[![一键导入 Loon](https://img.shields.io/badge/一键导入-Loon-orange.svg)](loon://import?plugin=https%3A%2F%2Fraw.githubusercontent.com%2FQuellaMC%2FNeteaseUnlocker%2Fmain%2FNeteaseUnlocker.plugin)
+[![一键导入 Loon][loon-sheid]][loon]
+
+[loon-sheid]: https://img.shields.io/badge/一键导入-Loon-orange.svg?style=for-the-badge&labelColor=gray
+[loon]: loon://import?plugin=https%3A%2F%2Fraw.githubusercontent.com%2FQuellaMC%2FNeteaseUnlocker%2Fmain%2FNeteaseUnlocker.plugin
 
 **手动配置:**
 
@@ -38,7 +44,10 @@
 
 ### **3. Surge**
 
-[![一键导入 Surge](https://img.shields.io/badge/一键导入-Surge-green.svg)](surge:///install-module?url=https%3A%2F%2Fraw.githubusercontent.com%2FQuellaMC%2FNeteaseUnlocker%2Fmain%2FNeteaseUnlocker.sgmodule)
+[![一键导入 Surge][surge-sheid]][surge]
+
+[surge-sheid]: https://img.shields.io/badge/一键导入-Surge-green.svg?style=for-the-badge&labelColor=gray
+[surge]: surge:///install-module?url=https%3A%2F%2Fraw.githubusercontent.com%2FQuellaMC%2FNeteaseUnlocker%2Fmain%2FNeteaseUnlocker.sgmodule
 
 **手动配置:**
 
@@ -49,7 +58,10 @@
 
 ### **4. Stash (Clash Premium Core)**
 
-[![一键导入 Stash](https://img.shields.io/badge/一键导入-Stash-purple.svg)](stash://install-override?url=https%3A%2F%2Fraw.githubusercontent.com%2FQuellaMC%2FNeteaseUnlocker%2Fmain%2FNeteaseUnlocker.stoverride)
+[![一键导入 Stash][stash-sheid]][stash]
+
+[stash-sheid]: https://img.shields.io/badge/一键导入-Stash-purple.svg?style=for-the-badge&labelColor=gray
+[stash]: stash://install-override?url=https%3A%2F%2Fraw.githubusercontent.com%2FQuellaMC%2FNeteaseUnlocker%2Fmain%2FNeteaseUnlocker.stoverride
 
 **手动配置:**
 
