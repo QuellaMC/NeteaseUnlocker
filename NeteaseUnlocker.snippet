@@ -1,0 +1,38 @@
+######################################################
+# 应用名称：  网易云音乐解锁 (UnblockNeteaseMusic)
+# 脚本作者：  UnblockNeteaseMusic Team, @QuellaMC
+# 更新时间：  2025-06-16
+# 使用说明：  用于解锁网易云音乐灰色歌曲，移除海外地区限制。
+#             需要配合 MitM 使用，请提前添加 hostname 并信任证书。
+# 脚本地址：  https://github.com/QuellaMC/Quantumult-X-Scripts
+######################################################
+
+#!name = 网易云音乐解锁
+#!desc = 用于解锁网易云音乐灰色歌曲，移除海外地区限制。
+#!author = [QuellaMC](https://github.com/QuellaMC)
+#!version = 2.0.0
+#!lastModified = 2025-06-16
+#!homepage = https://github.com/QuellaMC/NeteaseUnlocker
+#!icon = https://github.com/QuellaMC/NeteaseUnlocker/raw/main/icon.png
+
+#[hostname]
+hostname = *.music.163.com, *.126.net
+
+# =======================================================
+# 核心解锁脚本 (解锁歌曲变灰、VIP限制等)
+# 通过修改 API 响应实现
+# =======================================================
+^https?:\/\/(interface\d?|music)\.163\.com\/(e?api)\/.* url script-response-body https://raw.githubusercontent.com/QuellaMC/NeteaseUnlocker/main/js/unblock-netease.js
+
+# =======================================================
+# 海外地区限制解锁脚本
+# 通过修改请求头中的 X-Real-IP 实现
+# =======================================================
+^https?:\/\/(interface\d?|music)\.163\.com\/(e?api)\/.* url script-request-header https://raw.githubusercontent.com/QuellaMC/NeteaseUnlocker/main/js/unblock-netease-header.js
+
+# =======================================================
+# 屏蔽部分广告和升级请求
+# =======================================================
+^https?:\/\/.*\.163\.com\/api\/ad url reject-200
+^https?:\/\/.*\.163\.com\/api\/v\d\/(android|ios|osx|pc)\/(upgrade|version) url reject-200
+^https?:\/\/clientlog.*\.music\.163\.com\/ url reject-200

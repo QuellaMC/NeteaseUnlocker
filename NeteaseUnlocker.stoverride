@@ -1,0 +1,52 @@
+name: |-
+  网易云音乐解锁
+desc: |-
+  用于解锁网易云音乐灰色歌曲，移除海外地区限制。
+author: |-
+  [QuellaMC](https://github.com/QuellaMC)
+icon: |-
+  https://github.com/QuellaMC/NeteaseUnlocker/raw/main/icon.png
+version: |-
+  2.0.0
+lastModified: |-
+  2025-06-16
+homepage: |-
+  https://github.com/QuellaMC/NeteaseUnlocker
+
+http:
+
+  mitm:
+    - "*.music.163.com"
+    - "*.126.net"
+
+  url-rewrite:
+# =======================================================
+    - >-
+      ^https?:\/\/.*\.163\.com\/api\/ad - reject-200
+    - >-
+      ^https?:\/\/.*\.163\.com\/api\/v\d\/(android|ios|osx|pc)\/(upgrade|version) - reject-200
+    - >-
+      ^https?:\/\/clientlog.*\.music\.163\.com\/ - reject-200
+
+  script:
+# =======================================================
+    - match: ^https?:\/\/(interface\d?|music)\.163\.com\/(e?api)\/.*
+      name: "unblock-netease_21"
+      type: response
+      require-body: true
+      max-size: -1
+      timeout: 60
+
+# =======================================================
+    - match: ^https?:\/\/(interface\d?|music)\.163\.com\/(e?api)\/.*
+      name: "unblock-netease-header_26"
+      type: request
+      timeout: 60
+
+script-providers:
+  "unblock-netease_21":
+    url: https://raw.githubusercontent.com/QuellaMC/NeteaseUnlocker/main/js/unblock-netease.js
+    interval: 86400
+  "unblock-netease-header_26":
+    url: https://raw.githubusercontent.com/QuellaMC/NeteaseUnlocker/main/js/unblock-netease-header.js
+    interval: 86400

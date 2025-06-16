@@ -1,0 +1,23 @@
+#!name=网易云音乐解锁
+#!desc=用于解锁网易云音乐灰色歌曲，移除海外地区限制。
+#!author=[QuellaMC](https://github.com/QuellaMC)
+#!icon=https://github.com/QuellaMC/NeteaseUnlocker/raw/main/icon.png
+#!version=2.0.0
+#!lastModified=2025-06-16
+#!homepage=https://github.com/QuellaMC/NeteaseUnlocker
+
+[Rewrite]
+# =======================================================
+^https?:\/\/.*\.163\.com\/api\/ad - reject-200
+^https?:\/\/.*\.163\.com\/api\/v\d\/(android|ios|osx|pc)\/(upgrade|version) - reject-200
+^https?:\/\/clientlog.*\.music\.163\.com\/ - reject-200
+
+[Script]
+# =======================================================
+http-response ^https?:\/\/(interface\d?|music)\.163\.com\/(e?api)\/.* script-path=https://raw.githubusercontent.com/QuellaMC/NeteaseUnlocker/main/js/unblock-netease.js, requires-body=true, timeout=60, tag=unblock-netease
+
+# =======================================================
+http-request ^https?:\/\/(interface\d?|music)\.163\.com\/(e?api)\/.* script-path=https://raw.githubusercontent.com/QuellaMC/NeteaseUnlocker/main/js/unblock-netease-header.js, timeout=60, tag=unblock-netease-header
+
+[MITM]
+hostname = *.music.163.com, *.126.net
